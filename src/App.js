@@ -1,33 +1,62 @@
 import React from 'react';
 import './App.css';
-import profileImage from '../src/profile.jpg'; 
-import Facebook from '../src/facebook.png';
+import profileLogo from '../src/profile.jpg'; // Replace with your logo image
+import WhatsApp from '../src/whatsapp.png';
 import Instagram from '../src/instagram.png';
-import Twitter from '../src/twitter.png';
-import Linkedin from '../src/linkedin.png';
+import Facebook from '../src/facebook.png';
+import LinkedIn from '../src/linkedin.png';
+import XIcon from '../src/twitter.png';
+import GlobeIcon from '../src/web.png';
 
 function App() {
   return (
     <div className="App">
       <div className="profile-card">
-        <a href='https://nexura.ae' target='blank'>
-        <img src={profileImage} alt="Profile" className="profile-image" />
-        </a> 
-        <h1 className="profile-name">Nexura IT Solution</h1>
-        <p className="profile-role">Nexura It Solution, Dubai's hub for innovative software solutions, drives your business success with cutting-edge tech.</p>
+        <div className="profile-container">
+          <img src={profileLogo} alt="Nexura IT Solutions" className="profile-logo" />
+        </div>
+        <h3 className="profile-name" style={{ fontFamily: "'Calibri', sans-serif" }}>
+  Your Digital Partner
+</h3>
+
         <div className="social-icons">
-          <a href="https://www.facebook.com/profile.php?id=61565693772711" target="_blank" rel="noreferrer">
-            <img src={Facebook} alt="Facebook" className="social-icon" />
-          </a>
-          <a href="https://x.com/nexuraIt" target="_blank" rel="noreferrer">
-            <img src={Twitter} alt="Twitter" className="social-icon" />
+          <a href="https://wa.me/+971507072116" target="_blank" rel="noreferrer">
+            <img src={WhatsApp} alt="WhatsApp" className="social-icon" />
           </a>
           <a href="https://www.instagram.com/nexura.ae/" target="_blank" rel="noreferrer">
             <img src={Instagram} alt="Instagram" className="social-icon" />
           </a>
-          <a href="https://www.instagram.com/nexura.ae/" target="_blank" rel="noreferrer">
-            <img src={Linkedin} alt="Instagram" className="social-icon" />
+          <a href="https://www.facebook.com/nexuraIT" target="_blank" rel="noreferrer">
+            <img src={Facebook} alt="Facebook" className="social-icon" />
           </a>
+          <a href="https://www.linkedin.com/company/nexura-it" target="_blank" rel="noreferrer">
+            <img src={LinkedIn} alt="LinkedIn" className="social-icon" />
+          </a>
+          <a href="https://x.com/nexuraIt" target="_blank" rel="noreferrer">
+          <img src={XIcon} alt="twitter" className="social-icon" />
+          </a>
+          <a href="https://nexura.ae" target="_blank" rel="noreferrer">
+          <img src={GlobeIcon} alt="weburl" className="social-icon" />
+          </a>
+        </div>
+
+        <h2 className="projects-title" style={{ fontFamily: "'Calibri', sans-serif", fontWeight: "normal" }}>Our Projects</h2>
+        <div className="projects-grid">
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291089/Artboard_1_vh5kci.jpg' alt="Project 1" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291089/Artboard_2_wknepd.jpg' alt="Project 2" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291091/Artboard_3_l5gdv3.jpg' alt="Project 3" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291091/Artboard_5_rulcoq.jpg' alt="Project 4" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291180/mango_smoothie_SP_rhu9al.jpg' alt="Project 5" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291180/addidas_social_ad_-02_up7y14.jpg' alt="Project 6" className="project-image" />
+        
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291089/Artboard_1_vh5kci.jpg' alt="Project 1" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291089/Artboard_2_wknepd.jpg' alt="Project 2" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291091/Artboard_3_l5gdv3.jpg' alt="Project 3" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291091/Artboard_5_rulcoq.jpg' alt="Project 4" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291180/mango_smoothie_SP_rhu9al.jpg' alt="Project 5" className="project-image" />
+          <img src='https://res.cloudinary.com/dqasmnsve/image/upload/v1728291180/addidas_social_ad_-02_up7y14.jpg' alt="Project 6" className="project-image" />
+        
+        
         </div>
       </div>
     </div>
