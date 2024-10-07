@@ -39,6 +39,7 @@
   padding: 0px;
   margin: 0 auto;
   height: 100vh;
+  overflow-y: hidden;
 }
 
 body {
@@ -49,13 +50,14 @@ body {
 .profile-container {
   position: relative;
   display: inline-block; 
-  width: 180px; /* Adjust as needed */
-  height: 180px;
+  width: 150px; /* Adjust as needed */
+  height: 150px;
   border-radius: 50%; /* Make the container circular */
   /* background: linear-gradient(45deg, #ff6ec4, #7873f5);  */
   padding: 5px; 
   box-sizing: border-box;
   overflow: hidden; 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px ;
   z-index: 0;
 }
 
@@ -88,24 +90,27 @@ body {
 /* Profile Card */
 .profile-card {
   background-color: #000;
-  padding: 30px;
+  padding: 50px 30px 50px 30px;
   border-radius: 15px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.75) 0px -70px 36px -28px inset;
-  max-width: 400px;
+  /* box-shadow: rgba(0, 0, 0, 1) 0px -50px 36px -28px ;  */
+  box-shadow: rgba(0, 0, 0, 0.95) 0px -50px 36px -28px inset;
+   max-width: 400px;
   width: 100%;
-  max-height: 650px;
-  margin-bottom: 20px;
+  max-height: 570px;
+  margin-bottom: 30px;
   margin-top: 50px;
 }
 
 /* Profile Name */
 .profile-name {
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-top: 25px;
   font-family:"Calibri", sans-serif;
+  word-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 /* Social Icons */
@@ -137,7 +142,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  max-height: 250px;
+  max-height: 270px;
+  /* box-shadow: rgba(0, 0, 0, 1) 0px -50px 36px -28px ;  max-width: 400px; */
+
 }
 
 /* Project Image */
@@ -151,29 +158,47 @@ body {
 /* Responsive Design for Tablet */
 @media (max-width: 1024px) {
   .profile-card {
-    padding: 40px;
+    padding: 50px 30px 50px 30px;
     max-width: 350px;
   }
+  
 
   .profile-name {
     font-size: 26px;
   }
 
   .social-icon {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
+
+  }
+  .profile-card {
+    background-color: #000;
+    padding: 50px 30px 50px 30px;
+    border-radius: 15px;
+    text-align: center;
+    /* box-shadow: rgba(0, 0, 0, 1) 0px -50px 36px -28px ;  */
+    box-shadow: rgba(0, 0, 0, 0.95) 0px -50px 36px -28px inset;
+     max-width: 400px;
+    width: 100%;
+    max-height: 550px;
+    margin-bottom: 30px;
+    margin-top: 50px;
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+    max-height: 240px;
   }
 }
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .profile-card {
-    padding: 30px;
-    max-width: 320px;
+    padding: 50px 30px 50px 30px;
+    max-width: 300px;
+    margin-top: -5px;
   }
 
   .profile-name {
@@ -181,20 +206,22 @@ body {
   }
 
   .social-icon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
   }
+  
 }
 
 /* Responsive Design for Small Mobile Screens */
 @media (max-width: 480px) {
   .profile-card {
-    padding: 30px;
-    max-width: 280px;
+    padding: 50px 30px 50px 30px;
+    max-width: 300px;
     margin-top: -5px;
   }
 
@@ -211,6 +238,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin: 0;
   }
   .projects-title {
     font-size: 14px;
@@ -234,4 +262,5 @@ body {
     overflow: hidden; 
     z-index: 0;
   }
+
 }
